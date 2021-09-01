@@ -1,0 +1,50 @@
+.blackColor {
+  // color: black;
+  text-align: center;
+  p {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+}
+
+.boxes {
+  border: 1px solid rgba(0, 0, 0, 0.453);
+  box-shadow: 0px 30px 60px 0px rgba(38, 59, 94, 0.364);
+  border-radius: 20px;
+  padding-top: 20px;
+  height: 400px;
+  max-width: 20%;
+  margin: 20px;
+  h4 {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 10px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    z-index: 1;
+    padding: 0 0 10px;
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      height: 2px;
+      z-index: -1;
+      background: $px-theme;
+      width: 50px;
+    }
+  }
+  p {
+    margin-top: 50px;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  @include down-md {
+    max-width: 40%;
+  }
+  @include down-sm {
+    max-width: 100%;
+  }
+}

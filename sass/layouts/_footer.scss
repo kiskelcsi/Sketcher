@@ -1,0 +1,19 @@
+.footer {
+  padding: 112px 0;
+  background: #111;
+  .nav {
+    a {
+      color: rgba($px-white, 0.5);
+      font-size: 14px;
+      margin-right: 17px;
+      &:hover {
+        color: $px-white;
+      }
+    }
+  }
+  p {
+    color: rgba($px-white, 0.5);
+    font-size: 12px;
+    margin: 0;
+  }
+}
